@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    #main{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        background-image: url(./MEDIA/IMAGES/haunted-halloween-3840x2160-19266.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .top{
+       
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+    
+        margin-top: 18px;  
+    }
+    .anchor{
+        color:white;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    p{
+            color: white; 
+            font-size: 80px;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%; 
+            max-width: 700px; 
+            box-sizing: border-box;
+           
+}
+        input{
+           flex: 1;
+           
+            width: 700px;
+            height: 46px;
+            border-radius: 25px;
+            margin-top: 43px;
+            padding-left: 50px;
+
+            
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:center ;
+            text-align: center;
+            margin-top: 120px;
+            width:100%;
+        }
+        .search{
+            position: absolute;
+            
+            left:326px;
+            top: 316px;
+            font-size: 17px;
+        }
+        .mic{
+            position: absolute;
+            font-size: 20px;
+            top: 316px;
+            left: 960px;
+        }
+        .camera{
+            position: absolute;
+            font-size: 20px;
+            top: 316px;
+            left: 1005px;
+        }
+        #shortcut
+        {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .container1{
+            display: flex;
+            background-color: transparent;
+            height: 60px;
+            width: 45px;
+            padding: 15px;
+  
+            margin-top: 10px;
+            border-radius: 8px;
+            justify-items: center;
+        }
+        .container2{
+            display: flex;
+            background-color: transparent;
+            height: 60px;
+            width: 45px;
+            padding: 15px;
+            
+            margin-top: 10px;
+            border-radius: 8px;
+        
+        }
+        .container1>#shortcut1 {
+            position: absolute;
+            height: 46px;
+            width: 46px;
+            background-color:white;
+            border-radius: 50%;
+            margin-top: 2.5px;
+            
+        }
+        .container2>#shortcut2{
+            position:absolute;
+            height: 46px;
+            width: 46px;
+            
+            border-radius: 50%;
+            margin-top: 2.5px;
+            background-color:lightpink;
+        }
+        
+        .plus{
+            color:grey;
+            height: 28px;
+            width: 28px;
+            font-weight: bold;
+            margin-right:1px;
+            margin-top: 16px;
+            font-weight:bold;
+            font-size:large;
+            
+        }
+        
+        
+        #shortcut1:hover,#shortcut2:hover{
+           
+            background-color:lightslategrey;
+
+        }
+        .container1:hover,.container2:hover{
+            
+            background-color:seashell;
+            opacity: 0.1;
+            border-color: 2px solid grey;
+        }
+        .text{
+            margin-top: 100px;
+            margin-left:-70px;
+            color:white;
+            font-weight: bold;
+            
+
+            
+        }
+        #bottom{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+        #buttom>.right{
+            display:flex;
+            justify-content: flex-end;
+        }
+        .facebook{
+           color: blue;
+        }
+        #left
+        {
+            
+            color:white;
+            margin-top: 5em;
+        }
+        #left>a{
+            color:white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .right{
+            margin-left: 68.70em;
+            justify-content:flex-end;
+        }
+
+</style>
+<body>
+    <div id="main">
+    <div class="top">
+        <a href="#"class="anchor">Gmail</a>
+        <a href="#" class="anchor">Images</a>
+        <i class="fa-solid fa-flask anchor"></i>
+        <i class="fa-solid fa-bars anchor"></i>
+        <i class="fa-solid fa-user anchor"></i>
+    </div>
+    <div class="middle">
+        <p>Google</p>
+        <div id="input_container">
+        <input type="text" placeholder="  Search Google or type a URL">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+        <i class="fa-solid fa-microphone mic"></i>
+        <i class="fa-solid fa-camera camera"></i>
+        </div>
+        <div id="shortcut">
+            <div class="container1">
+                <div id="shortcut1">
+                    <i class="fa-brands fa-facebook plus facebook"></i>
+                </div>
+             </div>
+             <label class="text">facebook</label>
+             
+            <div class="container2">
+                <div id="shortcut2">
+                    <i class="fa-solid fa-plus plus"></i>
+                </div>
+            </div>
+            <label class="text">Add shortcut</label>
+            
+        </div><br>
+    </div>
+    <div class="bottom">
+        <div id="left">
+            <i class="fa-solid fa-link "></i><a href="#">Photo by NASA Image Library</a>
+      
+            <i class="fa-solid fa-pen right"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
